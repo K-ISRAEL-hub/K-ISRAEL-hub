@@ -1,0 +1,100 @@
+body{font-family:Garamond;
+     font-size:larger;
+     background-image: url("C:\Users\HP\Desktop\AUTOR\img\img.jpg");
+     background-size: cover; /* Pour que l'image couvre toute la page */
+     background-position: center; /* Centrer l'image */
+     background-repeat: no-repeat; /* Évite la répétition de l'image */
+    }
+h1 {color:cornflowerblue;
+}
+
+nav ul {
+    color: green;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+section {
+    padding: 20px;
+    display: none; /* Hidden by default */
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse:separate; /* Combine les bordures des cellules et du tableau */
+    text-align: left;
+}
+
+table, th, td {
+    border: 2px solid black; /* Bordure noire épaisse pour le tableau et chaque cellule */
+}
+
+table th, table td {
+    padding: 10px;
+}
+
+table th {
+    background-color:cornflowerblue;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+/* Style pour centrer les images et donner un peu d'espace */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les images */
+    padding: 20px;
+}
+
+.gallery img {
+    width: 150px;  /* Largeur de chaque image */
+    height: 150px; /* Hauteur de chaque image */
+    object-fit: cover;  /* Pour que l'image garde une bonne proportion */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Légère ombre pour donner un effet de profondeur */
+    transition: transform 0.3s ease; /* Animation lors du survol */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Agrandir légèrement l'image lors du survol */
+}
